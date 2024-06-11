@@ -18,7 +18,7 @@ func main() {
 		log.Fatalf("error getting response: %s",err);
 	}
 
-
-
+	defer res.Body.Close();
+	log.Println(res);
 
 }
